@@ -1,0 +1,4 @@
+<div>
+  <input type="file" (change)="readURL($event)">
+  <img [src]="imagePath || 'http://placehold.it/180'" alt="" *ngIf="(imagePath.length > 1)" style="height: 50px;width: 50px;">
+</div>
